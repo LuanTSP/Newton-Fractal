@@ -17,7 +17,7 @@ def newton_iterations(max_iter: int, X: np.ndarray, p: np.poly1d, eps: float):
 
 
 def generate_fractal(
-    p: poly1d = poly1d([1, 0, -2, 2]),
+    p: poly1d = poly1d([1, 0, 0, 1]),
     limits: list = [-1, 1, -1, 1],
     resolution: int = 2048,
     eps: float = 1e-8,
@@ -49,7 +49,7 @@ def generate_fractal(
 
 
 def main():
-    limits = [-0.5, 1.5, -0.5, 0.5]
+    limits = [-1, 1, -1, 1]
     img = generate_fractal(limits=limits)
     plt.imsave("generated_fractal_shaders.png", img)
     _, axs = plt.subplots()
