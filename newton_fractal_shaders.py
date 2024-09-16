@@ -1,6 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
-from numpy.lib import poly1d
+from numpy import poly1d
 import seaborn as sns
 
 
